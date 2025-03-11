@@ -1,4 +1,4 @@
--- Housing Project SQL
+-- Data Cleaning Project SQL
 -- Skills Used: CAST, PARTITION BY, ALTER, UPDATE, JOINS, ROW NUMBER, SUBSTRING, PARSENAME, CASE, DROP
 
 SELECT * FROM Housing
