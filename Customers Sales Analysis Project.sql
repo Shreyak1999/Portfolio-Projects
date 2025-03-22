@@ -1,4 +1,5 @@
--- Change over time, Cumulative Analysis, Performance Analysis, Part to Whole Analysis, Data Segmentation, Data Reporting,
+-- ADVANCED SQL PROJECT
+-- Change over time, Cumulative Analysis, Performance Analysis, Part to Whole Analysis, Data Segmentation, Data Reporting, Customer Report, Product Report
 
 
 SELECT YEAR(order_date) as Order_Year, SUM(sales_amount) as Sum_Sales, 
