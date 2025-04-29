@@ -9,31 +9,55 @@ Features: 60 numeric attributes representing energy within a specific frequency 
 Target:
 
 M — Mine
+
 R — Rock
 
 Project Workflow
+
 Data Loading and Exploration
-  Load dataset
-  Understand data dimensions and structure
-  Exploratory Data Analysis (EDA)
+ 
+    Load dataset
+  
+    Understand data dimensions and structure
+  
+    Exploratory Data Analysis (EDA)
+
 Data Preprocessing
-  Label encoding of target variable
-  Train-test split
-  Data normalization
+ 
+    Label encoding of target variable
+  
+    Train-test split
+  
+    Data normalization
+  
 Model Building
-  Logistic Regression model
-  Model training on training data
+  
+    Logistic Regression model
+  
+    Model training on training data
+
 Model Evaluation
-  Accuracy score
-  Confusion matrix
+
+    Accuracy score
+  
+    Confusion matrix
+
 Classification report
-  Prediction
-  Model testing with sample inputs
+    
+    Prediction
+    
+    Model testing with sample inputs
 Result interpretation
 
 Technologies Used
-  Python 3
-  Pandas
-  NumPy
-  Scikit-learn
-  Matplotlib / Seaborn (for any visualization)
+
+
+    Python 3
+    
+    Pandas
+  
+    NumPy
+    
+    Scikit-learn
+    
+    Matplotlib / Seaborn (for any visualization)
