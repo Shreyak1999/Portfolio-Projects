@@ -52,7 +52,7 @@ IDE: Jupyter Notebook
 
 # How to Run
 1. Clone this Repo
-git clone https://github.com/your-username/Portfolio-Projects.git
+git clone https://github.com/Shreyak1999/Portfolio-Projects.git
 cd Portfolio-Projects/EDA_Netflix_Titles
 
 2. Install Dependencies
