@@ -32,16 +32,17 @@ IDE: Jupyter Notebook
 ![Movies_vs_TV_Shows](../images/movies_vs_tv_shows.png)
 
 2. Content Released Over Time
-(Insert line chart showing releases per year)
+![Release_Year](../images/releases_over_time.png)
 
 3. Top 10 Countries Producing Content
-(Insert horizontal bar chart)
+![Top_Countries](../images/top_countries.png)
 
 4. Genre Distribution (Word Cloud / Bar Chart)
-(Insert visualization of most common genres)
+![Genres](../images/genres_wordcloud.png)
 
 5. Content Duration Patterns
-(Boxplot or histogram for movie duration / TV show seasons)
+![Movie_Duration](../images/movie_durations.png)
+![TV_Show_Duration](../images/tvshow_seasons.png)
 
 6. Top Directors and Actors
 (Insert bar chart or table of top names)
