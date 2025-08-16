@@ -29,7 +29,7 @@ IDE: Jupyter Notebook
 
 # Analysis & Visualizations
 1. Movies vs TV Shows Distribution
-(Insert bar chart here — movies vs TV shows)
+![Movies_vs_TV_Shows](../images/movies_vs_tv_shows.png)
 
 2. Content Released Over Time
 (Insert line chart showing releases per year)
@@ -67,6 +67,13 @@ Portfolio-Projects/
 │── EDA_Netflix_Titles/
 │     ├── eda.ipynb           # Jupyter notebook with full analysis
 │     ├── images/             # saved plots for README
+│     │     ├── movies_vs_tvshows.png
+│     │     ├── releases_over_time.png
+│     │     ├── top_countries.png
+│     │     ├── genres_wordcloud.png
+│     │     ├── movie_durations.png
+│     │     ├── tvshow_seasons.png
+│     │     └── top_directors.png
 │     ├── README.md           # this file
 │     └── requirements.txt    # libraries used
 
