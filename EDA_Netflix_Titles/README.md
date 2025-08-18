@@ -15,7 +15,8 @@ Columns include: title, director, cast, country, release year, rating, duration,
 
 
 # Tech Stack
-Python: Numpy, Pandas, Matplotlib.pyplot, Seaborn
+Python: Numpy, Pandas, Matplotlib.pyplot, Seaborn, Wordcloud
+
 IDE: Jupyter Notebook
 
 
@@ -37,6 +38,10 @@ IDE: Jupyter Notebook
 2. Content Released Over Time
 
 ![Release_Year](images/releases_over_time.png)
+
+3. Seasonal Trends in Content Release
+
+![Seasonal_Trends](images/seasonal_trends_netflix_releases.png)
 
 3. Top 10 Countries Producing Content
 
@@ -76,16 +81,28 @@ jupyter notebook eda.ipynb
 
 # Project Structure
 Portfolio-Projects/
+
 │── EDA_Netflix_Titles/
+
 │     ├── eda.ipynb           # Jupyter notebook with full analysis
+
 │     ├── images/             # saved plots for README
+
 │     │     ├── movies_vs_tvshows.png
+
 │     │     ├── releases_over_time.png
+
 │     │     ├── top_countries.png
+
 │     │     ├── genres_wordcloud.png
+
 │     │     ├── movie_durations.png
+
 │     │     ├── tvshow_seasons.png
+
 │     │     └── top_directors.png
+
 │     ├── README.md           # this file
+
 │     └── requirements.txt    # libraries used
 
