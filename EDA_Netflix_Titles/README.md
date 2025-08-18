@@ -29,24 +29,33 @@ IDE: Jupyter Notebook
 
 # Analysis & Visualizations
 1. Movies vs TV Shows Distribution
+
 ![Movies_vs_TV_Shows](images/movies_vs_tvshows.png)
+
 ![Movies_vs_TV_Shows_Ratings](images/movies_vs_tvshows_ratings.png)
 
 2. Content Released Over Time
+
 ![Release_Year](images/releases_over_time.png)
 
 3. Top 10 Countries Producing Content
+
 ![Top_Countries](images/top_countries.png)
 
 4. Genre Distribution (Word Cloud / Bar Chart)
+
 ![Genres](images/genres_wordcloud.png)
 
 5. Content Duration Patterns
+
 ![Movie_Duration](images/movie_durations.png)
+
 ![TV_Show_Duration](images/tvshow_seasons.png)
 
 6. Top Directors and Actors
+
 ![Top_Directors](images/top_directors.png)
+
 ![Top_Actors](images/top_actors.png)
 
 
