@@ -69,13 +69,17 @@ IDE: Jupyter Notebook
 
 # How to Run
 1. Clone this Repo
+
 git clone https://github.com/Shreyak1999/Portfolio-Projects.git
+
 cd Portfolio-Projects/EDA_Netflix_Titles
 
 2. Install Dependencies
+
 pip install -r requirements.txt
 
 3. Open Notebook
+
 jupyter notebook eda.ipynb
 
 
@@ -87,20 +91,6 @@ Portfolio-Projects/
 │     ├── eda.ipynb           # Jupyter notebook with full analysis
 
 │     ├── images/             # saved plots for README
-
-│     │     ├── movies_vs_tvshows.png
-
-│     │     ├── releases_over_time.png
-
-│     │     ├── top_countries.png
-
-│     │     ├── genres_wordcloud.png
-
-│     │     ├── movie_durations.png
-
-│     │     ├── tvshow_seasons.png
-
-│     │     └── top_directors.png
 
 │     ├── README.md           # this file
 
