@@ -13,9 +13,6 @@ xgboost>=1.7.0
 # Model Interpretability
 shap>=0.42.0
 
-# Deployment (Optional, remove if not using Streamlit app)
-streamlit>=1.28.0
-
 # Jupyter (for notebooks)
 jupyter>=1.0.0
 notebook>=7.0.0
