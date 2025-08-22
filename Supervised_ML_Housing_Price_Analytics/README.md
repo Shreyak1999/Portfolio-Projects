@@ -80,44 +80,48 @@ This project predicts the selling prices of residential homes in Ames, Iowa usin
 
     - SHAP → Model interpretability
 
-    - Streamlit → Deployment as web app
-
 
 🔎 Project Workflow
 
 1. Exploratory Data Analysis (EDA)
 
-    - Distribution of Sale Prices
-    - Correlation heatmap of features
-    - Outlier detection & handling
+    - Visualized distributions of features and target (SalePrice).
+    - Handled missing values with median/mode/domain-based imputations.
+    - Detected and removed outliers using Isolation Forest.
 
-2. Data Preprocessing
+2. Feature Engineering
 
-    - Missing value imputation
-    - Encoding categorical variables (OneHotEncoder)
-    - Feature scaling (StandardScaler)
-    - Train-test split
+    - Log-transformed SalePrice to reduce skewness.
+    - Created new features like TotalSF = Basement + 1st Floor + 2nd Floor area.
+    - One-Hot Encoded categorical features.
 
-3. Modeling
+3. Model Training
 
-    - Baseline: Linear Regression
-    - Advanced: Random Forest Regressor, XGBoost Regressor
-    - Model comparison using RMSE, MAE, R²
+    - Trained multiple models with cross-validation RMSE:
+        - Linear Regression, Ridge, Lasso, ElasticNet
+        - Random Forest, Gradient Boosting, XGBoost, LightGBM
 
-4. Hyperparameter Tuning
-    - GridSearchCV & RandomizedSearchCV
+    - Selected top performers: Lasso, XGBoost, LightGBM.
 
-5. Model Interpretability
+4. Ensemble Strategy
 
-    - Feature importance plots
-    - SHAP summary plots (explain predictions at global & local level)
+    - Implemented two ensemble approaches:
+        - Simple Average of top 3 models.
+        - Weighted Average (higher weight to XGBoost/LightGBM).
+    - Achieved lower RMSE than single models.
 
-6. Deployment
+5. Results
 
-    - Interactive Streamlit app to predict house price given input features
+    - Best model: Weighted Ensemble (XGBoost + LightGBM + Lasso).
+
+Generated final predictions (submission.csv, submission_avg.csv and submission_weighted.csv).
 
 
-📈 Results
+📈 Key Insights
+
+- Feature engineering (log transform, total area features) significantly improved accuracy.
+- Ensemble learning outperformed individual models.
+- Regularization (Lasso/Ridge) stabilized high-dimensional data.
 
 
 📊 Visualizations
@@ -136,9 +140,6 @@ This project predicts the selling prices of residential homes in Ames, Iowa usin
 
 3. Run eda.ipynb
 
-4. Deployment
-
-    streamlit run app.py
 
 
 🙌 Acknowledgments
