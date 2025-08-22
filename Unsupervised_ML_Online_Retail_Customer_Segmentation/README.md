@@ -57,21 +57,70 @@ The goal is to identify distinct customer profiles based on their **purchasing b
 - Optimal number of clusters: **4**  
 - Cluster summaries:  
 
-| Cluster | Recency (days) | Frequency | Monetary (£, log-scale) | Interpretation |
-|---------|----------------|-----------|--------------------------|----------------|
-| 0       | High           | Low       | Low                      | At-risk customers |
-| 1       | Low            | High      | High                     | Loyal, high-value customers |
-| 2       | Medium         | Medium    | Medium                   | Regular shoppers |
-| 3       | High           | Low       | Medium                   | Price-sensitive, inactive |
+| Cluster | Recency (days) | Frequency | Monetary (log spending) | Profile |
+|---------|----------------|-----------|--------------------------|----------|
+| **0** | 3.07 | 1.37 | 6.01 | Occasional but recent buyers |
+| **1** | 1.87 | 4.54 | 9.03 | **VIP customers** – very recent, frequent, high spenders |
+| **2** | 3.17 | 2.34 | 7.62 | Potential loyalists – moderate frequency & spending |
+| **3** | 5.08 | 1.21 | 5.79 | At-risk customers – infrequent, lowest spending |
+
+### 🔹 Business Insights
+    - **Cluster 1 (VIPs):** Retain with loyalty rewards, premium offers  
+
+    - **Cluster 2 (Potential Loyalists):** Encourage more purchases with discounts/personalized marketing  
+
+    - **Cluster 0 (Occasional Buyers):** Re-engage via seasonal campaigns, email nudges 
+
+    - **Cluster 3 (At-Risk):** Win-back strategies like special offers or surveys  
+
 
 - **Silhouette Score:** ~0.3 (moderate separation)
 
 ---
 
+## 🔎 PCA Analysis
+
+To better visualize customer segments, I applied Principal Component Analysis (PCA) on the standardized Recency, Frequency, and Monetary (RFM) features.
+
+PCA Component 1 (PC1):
+
+- Strongly correlated with Frequency and Monetary.
+
+- Interpreted as a measure of Overall Customer Value.
+
+- Customers on the right side of the PCA plot represent frequent, high-spending buyers.
+
+PCA Component 2 (PC2):
+
+- Strongly correlated with Recency.
+
+- Interpreted as a measure of Purchase Recency.
+
+- Customers at the top of the PCA plot are recent purchasers, while those at the bottom have not purchased for a long time.
+
+Cluster Separation in PCA Space:
+
+- The 2D PCA projection clearly shows distinct customer groups.
+
+- VIPs are located on the right (high value), while At-Risk customers cluster on the left with low frequency and monetary value.
+
+- This dimensionality reduction helped validate that our clustering effectively captured meaningful behavioral differences.
+
+---
+
 ## 📊 Visualizations
-- Elbow Method for optimal clusters  
+- Elbow Method for optimal clusters 
+
+![Elbow](images/elbow.png)
+
 - Pairplot of RFM features colored by cluster  
+
+![Kmeans Cluster](images/clustering.png)
+
 - PCA 2D visualization of clusters  
+
+![PCA](images/PCA.png)
+
 
 ---
 
@@ -81,7 +130,9 @@ The goal is to identify distinct customer profiles based on their **purchasing b
 
     |- Online Retail.xlsx
 
-│notebook.ipynb
+|── images
+
+│──notebook.ipynb
 
 │── README.md
 
